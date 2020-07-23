@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    tools:context=".InfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/info_image"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:background="#fff"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/info_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#2E2E2E"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/info_location_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:textColor="#B9B9B9"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/info_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:textColor="#2E2E2E"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/info_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#2E2E2E"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/info_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#2E2E2E"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:background="#FAFAFA"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <ImageButton
+                android:id="@+id/info_favorite"
+                android:layout_width="60dp"
+                android:layout_height="47dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/field_bg"
+                android:backgroundTint="#FE6D8E"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_heart" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/info_apply"
+                android:layout_width="221dp"
+                android:layout_height="57dp"
+                android:backgroundTint="#5D8AF5"
+                android:text="Apply"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                app:cornerRadius="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/info_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/field_bg"
+        android:backgroundTint="#E6E6E6"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
